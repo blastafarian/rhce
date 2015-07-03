@@ -80,3 +80,8 @@ kinit admin
 
 # Verify IPA access:
 ipa user-find admin
+
+# Backup the CA cert stored in /root/cacert.p12
+# This file is required to create replicas
+sudo mkdir /var/tmp/bak/root
+sudo cp -p /root/cacert.p12 /var/tmp/bak/root
